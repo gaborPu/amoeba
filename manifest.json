@@ -1,0 +1,45 @@
+{
+    "name": "Amőba játék (HMEI)",
+    "short_name": "Amőba",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "images/icons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "images/icons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "images/icons/icon-1024x1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      },
+      {
+        "src": "images/icons/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#e7b446",
+    "background_color": "#e7e4db",
+    "display": "standalone",
+    "description": "Amőba játék webes alapokon, azaz HTML5, (s)CSS, Vanilla JS.\nHja, és PWA kompatibilis. :)",
+    "dir": "ltr",
+    "lang": "hu",
+    "orientation": "portrait",
+    "display_override": [
+      "fullscreen"
+    ],
+    "prefer_related_applications": false,
+    "categories": [
+      "games"
+    ],
+    "edge_side_panel": {
+      "preferred_width": 1000
+    }
+  }  

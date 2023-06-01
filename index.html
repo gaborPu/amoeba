@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/images/icons/site.webmanifest">
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#e7e4db">
+    <meta name="msapplication-TileColor" content="#e7e4db">
+    <meta name="theme-color" content="#e7e4db">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400;1,600&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="./css/fontawesome-640/css/fontawesome.css" rel="stylesheet">
+    <link href="./css/fontawesome-640/css/brands.css" rel="stylesheet">
+    <link href="./css/fontawesome-640/css/solid.css" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/app.css?ver=28323138224237">
+    <title>AMŐBA - (HMEI)</title>
+</head>
+<body>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('sw.js')
+        }
+    </script>
+      
+    <div id="imagePreloader" style="display:none">
+        <img src="./images/figures/fig_1.png" alt="">
+        <img src="./images/figures/fig_2.png" alt="">
+        <img src="./images/figures/fig_3.png" alt="">
+        <img src="./images/figures/fig_4.png" alt="">
+        <img src="./images/figures/fig_5.png" alt="">
+        <img src="./images/figures/fig_6.png" alt="">
+        <img src="./images/figures/fig_7.png" alt="">
+        <img src="./images/figures/fig_8.png" alt="">
+        <img src="./images/figures/fig_9.png" alt="">
+        <img src="./images/figures/fig_10.png" alt="">
+        <img src="./images/figures/fig_11.png" alt="">
+        <img src="./images/figures/fig_12.png" alt="">
+        <img src="./images/figures/fig_13.png" alt="">
+        <img src="./images/figures/fig_14.png" alt="">
+        <img src="./images/figures/fig_15.png" alt="">
+        <img src="./images/figures/fig_100.png" alt="">
+    </div>
+    
+    <div id='shape'></div>
+    <main>
+        <header>
+            <div id="logo">
+                <img src="./images/logo-small-color.png" alt="">
+                <h1>AMŐBA</h1>
+                <p>- HMEI -</p>
+            </div>
+        </header>
+        <section id="login" class="">
+            <h2>Bejelentkezés</h2>
+            <form id="login-form">
+                <label for="player-name">Neved
+                    <input type="text" name="player-name" id="player-name" class="input-field">
+                </label>
+                <label for="player-password">Jelszavad
+                    <input type="password" name="player-password" id="player-password" class="input-field">
+                </label>
+                <button id="login-button" class="buttons" type="button" value="to-setup">Bejelentkezés</button>
+            </form>
+        </section>
+        <section id="setup" class="hidden">
+            <h2>Beállítások</h2>
+            <h3>Játékosok</h3>
+            <div id="player0">
+                <div class="player active-player" id="p0" data-value="0">
+                    <div class="player-name"><span id="player-name-0">Kattints ide!</span></div>
+                    <div class="player-figure" id="player-figure-0"></div>
+                </div>
+                <div id="select-figure-0" class="select-figure hidden">
+                    <h3>Válassz nevet</h3>
+                    <form>
+                        <label for="player-change-name-0">Neved
+                            <input type="text" name="player-change-name-0" id="player-change-name-0" class="input-field">
+                        </label>
+                    </form>
+                    <div id="player-change-figure-0" class="change-figure">
+                        <h3>Válassz figurát</h3>
+                        <div class="select-figure-elements" id="select-figure-elements-0">
+                            <div class="select-element figure-1" data-number="1"></div>
+                            <div class="select-element figure-2" data-number="2"></div>
+                            <div class="select-element figure-3" data-number="3"></div>
+                            <div class="select-element figure-4" data-number="4"></div>
+                            <div class="select-element figure-5" data-number="5"></div>
+                            <div class="select-element figure-6" data-number="6"></div>
+                            <div class="select-element figure-7" data-number="7"></div>
+                            <div class="select-element figure-8" data-number="8"></div>
+                            <div class="select-element figure-9" data-number="9"></div>
+                            <div class="select-element figure-10" data-number="10"></div>
+                            <div class="select-element figure-11" data-number="11"></div>
+                            <div class="select-element figure-12" data-number="12"></div>
+                            <div class="select-element figure-13" data-number="13"></div>
+                            <div class="select-element figure-14" data-number="14"></div>
+                            <div class="select-element figure-15" data-number="15"></div>
+                        </div>
+                    </div>
+                    <div class="setup-ready-button" id="readyButton-0">
+                        <button type="button" class="readyButton" value="readyButton-0">Mentés</button>
+                    </div>
+                </div>
+            </div>
+            <div id="player1">
+                <div class="player active-player" id="p1" data-value="1">
+                    <div class="player-name"><span id="player-name-1">Kattints ide!</span></div>
+                    <div class="player-figure" id="player-figure-1"></div>
+                </div>
+                <div id="select-figure-1" class="select-figure hidden">
+                    <h3>Válassz nevet</h3>
+                    <form>
+                        <label for="player-change-name-1">Neved
+                            <input type="text" name="player-change-name-1" id="player-change-name-1" class="input-field">
+                        </label>
+                    </form>
+                    <div id="player-change-figure-1" class="change-figure">
+                        <h3>Válassz figurát</h3>
+                        <div class="select-figure-elements" id="select-figure-elements-1">
+                            <div class="select-element figure-1" data-number="1"></div>
+                            <div class="select-element figure-2" data-number="2"></div>
+                            <div class="select-element figure-3" data-number="3"></div>
+                            <div class="select-element figure-4" data-number="4"></div>
+                            <div class="select-element figure-5" data-number="5"></div>
+                            <div class="select-element figure-6" data-number="6"></div>
+                            <div class="select-element figure-7" data-number="7"></div>
+                            <div class="select-element figure-8" data-number="8"></div>
+                            <div class="select-element figure-9" data-number="9"></div>
+                            <div class="select-element figure-10" data-number="10"></div>
+                            <div class="select-element figure-11" data-number="11"></div>
+                            <div class="select-element figure-12" data-number="12"></div>
+                            <div class="select-element figure-13" data-number="13"></div>
+                            <div class="select-element figure-14" data-number="14"></div>
+                            <div class="select-element figure-15" data-number="15"></div>
+                        </div>
+                    </div>
+                    <div class="setup-ready-button" id="readyButton-1">
+                        <button type="button" class="readyButton" value="readyButton-1">Mentés</button>
+                    </div>
+                </div>
+            </div>
+            <div id="player2">
+                <div class="player" id="p2" data-value="2">
+                    <div class="player-name"><span id="player-name-2">Kattints ide!</span></div>
+                    <div class="player-figure" id="player-figure-2" data-value="macska"></div>
+                </div>
+                <div id="select-figure-2" class="select-figure hidden">
+                    <h3>Válassz nevet</h3>
+                    <form>
+                        <label for="player-change-name-2">Neved
+                            <input type="text" name="player-change-name-2" id="player-change-name-2" class="input-field">
+                        </label>
+                    </form>
+                    <div id="player-change-figure-2" class="change-figure">
+                        <h3>Válassz figurát</h3>
+                        <div class="select-figure-elements" id="select-figure-elements-2">
+                            <div class="select-element figure-1" data-number="1"></div>
+                            <div class="select-element figure-2" data-number="2"></div>
+                            <div class="select-element figure-3" data-number="3"></div>
+                            <div class="select-element figure-4" data-number="4"></div>
+                            <div class="select-element figure-5" data-number="5"></div>
+                            <div class="select-element figure-6" data-number="6"></div>
+                            <div class="select-element figure-7" data-number="7"></div>
+                            <div class="select-element figure-8" data-number="8"></div>
+                            <div class="select-element figure-9" data-number="9"></div>
+                            <div class="select-element figure-10" data-number="10"></div>
+                            <div class="select-element figure-11" data-number="11"></div>
+                            <div class="select-element figure-12" data-number="12"></div>
+                            <div class="select-element figure-13" data-number="13"></div>
+                            <div class="select-element figure-14" data-number="14"></div>
+                            <div class="select-element figure-15" data-number="15"></div>
+                        </div>
+                    </div>
+                    <div class="setup-ready-button" id="readyButton-2">
+                        <button type="button" class="delete-player" value="delete-player-2">Játékos törlése</button>
+                        <button type="button" class="readyButton" value="readyButton-2">Mentés</button>
+                    </div>
+                </div>
+            </div>
+            <div id="player3">
+                <div class="player" id="p3" data-value="3">
+                    <div class="player-name"><span id="player-name-3">Kattints ide!</span></div>
+                    <div class="player-figure" id="player-figure-3"></div>
+                </div>
+                <div id="select-figure-3" class="select-figure hidden">
+                    <h3>Válassz nevet</h3>
+                    <form>
+                        <label for="player-change-name-3">Neved
+                            <input type="text" name="player-change-name-3" id="player-change-name-3" class="input-field">
+                        </label>
+                    </form>
+                    <div id="player-change-figure-3" class="change-figure">
+                        <h3>Válassz figurát</h3>
+                        <div class="select-figure-elements" id="select-figure-elements-3">
+                            <div class="select-element figure-1" data-number="1"></div>
+                            <div class="select-element figure-2" data-number="2"></div>
+                            <div class="select-element figure-3" data-number="3"></div>
+                            <div class="select-element figure-4" data-number="4"></div>
+                            <div class="select-element figure-5" data-number="5"></div>
+                            <div class="select-element figure-6" data-number="6"></div>
+                            <div class="select-element figure-7" data-number="7"></div>
+                            <div class="select-element figure-8" data-number="8"></div>
+                            <div class="select-element figure-9" data-number="9"></div>
+                            <div class="select-element figure-10" data-number="10"></div>
+                            <div class="select-element figure-11" data-number="11"></div>
+                            <div class="select-element figure-12" data-number="12"></div>
+                            <div class="select-element figure-13" data-number="13"></div>
+                            <div class="select-element figure-14" data-number="14"></div>
+                            <div class="select-element figure-15" data-number="15"></div>
+                        </div>
+                    </div>
+                    <div class="setup-ready-button" id="readyButton-3">
+                        <button type="button" class="delete-player" value="delete-player-3">Játékos törlése</button>
+                        <button type="button" class="readyButton" value="readyButton-3">Mentés</button>
+                    </div>
+                </div>
+            </div>
+            <h3>Tábla mérete</h3>
+            <div id="board-sizing">
+                <div id="board-size-10" class="board-size active-size" data-value="10">10 x 10</div>
+                <div id="board-size-15" class="board-size" data-value="15">15 x 15</div>
+                <div id="board-size-20" class="board-size" data-value="20">20 x 20</div>
+                <div id="board-size-25" class="board-size" data-value="25">25 x 25</div>
+            </div>
+            <button class="buttons" id="save-setup" value="to-game">Beállítás kész</button>
+        </section>
+        <section id="game" class="hidden">
+            <h2>Játék</h2>
+            <div id="gamers">
+                <div id="player-game-0" class="player-game-box" style="display: none;">
+                    <div class="player" id="pg0">
+                        <div class="player-name" id="player-game-name-0"></div>
+                        <div class="player-figure" id="player-game-figure-0"></div>
+                    </div>
+                </div>
+                <div id="player-game-1" class="player-game-box" style="display: none;">
+                    <div class="player" id="pg1">
+                        <div class="player-name" id="player-game-name-1"></div>
+                        <div class="player-figure" id="player-game-figure-1"></div>
+                    </div>
+                </div>
+                <div id="player-game-2" class="player-game-box" style="display: none;">
+                    <div class="player" id="pg2">
+                        <div class="player-name" id="player-game-name-2"></div>
+                        <div class="player-figure" id="player-game-figure-2"></div>
+                    </div>
+                </div>
+                <div id="player-game-3" class="player-game-box" style="display: none;">
+                    <div class="player" id="pg3">
+                        <div class="player-name" id="player-game-name-3"></div>
+                        <div class="player-figure" id="player-game-figure-3"></div>
+                    </div>
+                </div>            
+            </div>
+            <section id="message"><p id="message-span">Lorem ipsum dolor sit amet.</p></section>
+            <div id="game-board-container">
+                <div id="grid-container"></div>
+                <div id="konfetti-container"></div>
+            </div>
+            <div class="buttons-container">
+                <button class="buttons" id="to-setup" value="to-setup">Beállítások</button>
+                <button class="buttons" id="new-game" value="to-new-game">Új játék</button>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="./js/app.js?v=234ew34393q3253"></script>
+</body>
+</html>
