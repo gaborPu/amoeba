@@ -12,6 +12,7 @@ A **Fontavesome** és a **Google Fonts** kivételével nem használtam fel semmi
 ## A játék indítása
 
 A legegyszerűbb a következő linken elérni: [Amőba játék](https://pusztafi.hu/amoeba/)
+<br>Repó:  https://github.com/gaborPu/amoeba.git
 
 <hr>
 
